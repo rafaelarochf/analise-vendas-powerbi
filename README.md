@@ -135,7 +135,7 @@ Base de dados fictícia contendo informações de vendas: produtos, vendedores, 
 
 ##  Imagens do Dashboard
 
-![Visão Executiva](./imagens/dashprints/01_Visao_Executiva.png)
+![Visão Executiva](./imagens/dashprints/01_Analise_Geral.png)
 ![Performance Comercial](./imagens/dashprints/02_Performance_Comercial.png)
 ![Clientes](./imagens/dashprints/03_Clientes.png)
-![Eficiência e Rentabilidade](./imagens/dashprints/04_Eficiencia_Rentabilidade.png)
+![Eficiência e Rentabilidade](./imagens/dashprints/04_Eficiencia.png)
