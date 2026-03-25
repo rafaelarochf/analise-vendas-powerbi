@@ -1,6 +1,6 @@
 # Projeto 01 – Análise de Vendas (Power BI)
 
-## 🎯 Objetivo do Projeto
+##  Objetivo do Projeto
 
 Analisar dados de vendas para entender o desempenho comercial da empresa, identificar padrões de compra, avaliar a performance de vendedores e analisar o comportamento de vendas por região, produto e canal.
 
@@ -13,7 +13,7 @@ O projeto foca em responder perguntas estratégicas como:
 
 ---
 
-## 🛠 Ferramentas
+##  Ferramentas
 
 * **Power BI**
 * **Excel**
@@ -22,7 +22,7 @@ O projeto foca em responder perguntas estratégicas como:
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 Base de dados fictícia contendo informações de vendas: produtos, vendedores, regiões, clientes e métodos de pagamento.
 
@@ -44,9 +44,9 @@ Base de dados fictícia contendo informações de vendas: produtos, vendedores, 
 
 ---
 
-## 📊 Estrutura do Dashboard
+##  Estrutura do Dashboard
 
-### 🔹 Aba 1 — Visão Executiva (Executive Summary)
+###  Aba 1 — Visão Executiva (Executive Summary)
 
 **Objetivo:** Responder rápido “A operação está saudável?”  
 **Visualizações:**
@@ -65,7 +65,7 @@ Base de dados fictícia contendo informações de vendas: produtos, vendedores, 
 
 ---
 
-### 🔹 Aba 2 — Performance Comercial
+###  Aba 2 — Performance Comercial
 
 **Objetivo:** Descobrir “Quem realmente traz resultado?”  
 **Visualizações:**
@@ -85,7 +85,7 @@ Base de dados fictícia contendo informações de vendas: produtos, vendedores, 
 
 ---
 
-### 🔹 Aba 3 — Clientes
+###  Aba 3 — Clientes
 
 **Objetivo:** Avaliar “Estamos crescendo com qualidade ou só volume?”  
 **Visualizações:**
@@ -104,7 +104,7 @@ Base de dados fictícia contendo informações de vendas: produtos, vendedores, 
 
 ---
 
-### 🔹 Aba 4 — Eficiência e Rentabilidade
+###  Aba 4 — Eficiência e Rentabilidade
 
 **Objetivo:** Descobrir “Onde estamos ganhando ou perdendo margem?”  
 **Visualizações:**
@@ -123,7 +123,7 @@ Base de dados fictícia contendo informações de vendas: produtos, vendedores, 
 
 ---
 
-## 🧠 Insights Gerais
+##  Insights Gerais
 
 * Regiões com maior volume de vendas
 * Vendedores mais eficientes
@@ -133,7 +133,7 @@ Base de dados fictícia contendo informações de vendas: produtos, vendedores, 
 
 ---
 
-## 🖼️ Imagens do Dashboard
+##  Imagens do Dashboard
 
 ![Visão Executiva](./imagens/01_Analise_Geral.png)
 ![Performance Comercial](./imagens/02_Performance_Comercial.png)
