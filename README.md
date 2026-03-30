@@ -4,21 +4,21 @@
 
 Analisar dados de vendas para entender o desempenho comercial da empresa, identificar padrões de compra, avaliar a performance de vendedores e analisar o comportamento de vendas por região, produto e canal.
 
-O projeto foca em responder perguntas estratégicas como:
-
-* “A operação está saudável?”
-* “Quem realmente gera resultado?”
-* “Estamos crescendo com qualidade ou só volume?”
-* “Onde estamos ganhando ou perdendo margem?”
+O projeto busca responder perguntas estratégicas como:
+- “A operação está saudável?”
+- “Quem realmente gera resultado?”
+- “Estamos crescendo com qualidade ou só volume?”
+- “Onde estamos ganhando ou perdendo margem?”
 
 ---
 
-##  Ferramentas
+##  Ferramentas Utilizadas
 
-* **Power BI**
-* **Excel**
-* **Power Query**
-* **DAX**
+- **Power BI** (Visualização e Storytelling)
+- **Excel** (Fonte de dados)
+- **Power Query** (ETL - Tratamento de dados)
+- **DAX** (Criação de métricas personalizadas)
+- **Figma** (Design de Background)
 
 ---
 
@@ -26,116 +26,68 @@ O projeto foca em responder perguntas estratégicas como:
 
 Base de dados fictícia contendo informações de vendas: produtos, vendedores, regiões, clientes e métodos de pagamento.
 
-### Principais colunas
-
-* `Product_ID` → identificador do produto vendido
-* `Sale_Date` → data da venda
-* `Sales_Rep` → vendedor responsável pela venda
-* `Region` → região onde a venda ocorreu
-* `Sales_Amount` → valor total da venda
-* `Quantity_Sold` → quantidade de produtos vendidos
-* `Product_Category` → categoria do produto
-* `Unit_Cost` → custo unitário do produto
-* `Unit_Price` → preço unitário de venda
-* `Customer_Type` → tipo de cliente (novo ou recorrente)
-* `Discount` → percentual de desconto aplicado
-* `Payment_Method` → forma de pagamento
-* `Sales_Channel` → canal de venda (online ou loja física)
+### Principais Colunas:
+- `Product_ID`: Identificador do produto vendido
+- `Sale_Date`: Data da venda
+- `Sales_Rep`: Vendedor responsável
+- `Region`: Região da venda
+- `Sales_Amount`: Valor total da venda
+- `Product_Category`: Categoria do produto
+- `Customer_Type`: Tipo de cliente (Novo ou Recorrente)
+- `Discount`: Percentual de desconto aplicado
+- `Sales_Channel`: Canal de venda (Online ou Loja Física)
 
 ---
 
 ##  Estrutura do Dashboard
 
-###  Aba 1 — Visão Executiva (Executive Summary)
+### 1. Visão Executiva (Executive Summary)
+**Objetivo:** Resposta rápida sobre a saúde da operação.
+- **Visualizações:** Cards de Receita Líquida, Custo, Lucro, Margem e Qtd Total com indicadores de variação (MoM). Gráfico de linha temporal e barras por região.
+- **Insight:** Identificação de tendências de crescimento e sazonalidade da receita e do lucro.
 
-**Objetivo:** Responder rápido “A operação está saudável?”  
-**Visualizações:**
+### 2. Performance Comercial
+**Objetivo:** Identificar quem realmente traz resultado financeiro.
+- **Visualizações:** Ranking de vendedores por receita vs. lucro e análise de canais de venda.
+- **Diferencial:** Inclusão de **Tooltips personalizados** que mostram a Margem (%) ao passar o mouse sobre cada vendedor.
 
-* Cards: Receita Líquida, Custo Total, Lucro Total, Margem (%), Quantidade Total
-* Linha do tempo: Receita Líquida e Lucro Total
-* Barras: Receita por Região e por Categoria de Produto
+### 3. Análise de Clientes
+**Objetivo:** Avaliar o equilíbrio entre aquisição e retenção.
+- **Visualizações:** Proporção de clientes Novos vs. Recorrentes e distribuição geográfica da base.
+- **Insight:** Análise da estabilidade e previsibilidade de receita através da taxa de recorrência.
 
-**Insight:**
-
-> A operação apresenta crescimento de receita ao longo do tempo, mas a lucratividade varia entre regiões e categorias, indicando oportunidades de otimização.
-
-**Storytelling:**
-
-> Esta visão geral permite acompanhar os principais indicadores da operação, incluindo receita, custo e margem.
-
----
-
-###  Aba 2 — Performance Comercial
-
-**Objetivo:** Descobrir “Quem realmente traz resultado?”  
-**Visualizações:**
-
-* Barras: Receita e Lucro por Vendedor
-* Funil: Lucro por Categoria de Produto
-* Barras: Receita por Canal de Vendas
-* Medida DAX: `Ranking Vendedor = RANKX(ALL('vendas'[Sales_Rep]), [Receita Líquida], , DESC)`
-
-**Insight:**
-
-> Nem sempre os vendedores com maior volume de vendas são os mais lucrativos, mostrando diferença de eficiência comercial.
-
-**Storytelling:**
-
-> Esta aba mostra a performance de vendedores e canais, permitindo identificar quem gera valor real para o negócio.
-
----
-
-###  Aba 3 — Clientes
-
-**Objetivo:** Avaliar “Estamos crescendo com qualidade ou só volume?”  
-**Visualizações:**
-
-* Cards: Clientes Novos, Clientes Recorrentes, % Novos, % Recorrentes
-* Pizza: Distribuição por tipo de cliente
-* Barras: Distribuição por região x tipo de cliente
-
-**Insight:**
-
-> A proporção entre clientes novos e recorrentes indica o equilíbrio entre aquisição e retenção.
-
-**Storytelling:**
-
-> Avaliamos o comportamento dos clientes, identificando estabilidade e previsibilidade de receita.
-
----
-
-###  Aba 4 — Eficiência e Rentabilidade
-
-**Objetivo:** Descobrir “Onde estamos ganhando ou perdendo margem?”  
-**Visualizações:**
-
-* Cards: Preço Médio, Custo Médio, Desconto Médio
-* Barras: Preço, Custo e Margem por Categoria
-* Dispersão: Preço x Custo, tamanho da Receita Líquida, legenda Categoria
-
-**Insight:**
-
-> Diferenças entre preço e custo mostram oportunidades de melhoria de margem por categoria.
-
-**Storytelling:**
-
-> Esta aba analisa a eficiência operacional, permitindo identificar produtos com maior potencial de rentabilidade.
+### 4. Eficiência e Rentabilidade
+**Objetivo:** Identificar oportunidades de ganho de margem.
+- **Visualizações:** Análise de dispersão cruzando Preço Médio vs. Margem (%) e composição de custo por categoria.
+- **Insight:** Descoberta de produtos/categorias que possuem alto preço mas margens baixas, sinalizando necessidade de revisão de custos.
 
 ---
 
 ##  Insights Gerais
 
-* Regiões com maior volume de vendas
-* Vendedores mais eficientes
-* Produtos mais lucrativos
-* Impacto do canal de venda nas receitas
-* Comportamento de clientes novos vs recorrentes
+* **Regiões:** Identificação dos polos de maior volume de vendas.
+* **Vendedores:** Distinção entre vendedores de volume e vendedores de margem (eficiência).
+* **Produtos:** Mapeamento das categorias mais lucrativas para a operação.
+* **Clientes:** Equilíbrio estratégico entre a entrada de novos clientes e a fidelização da base.
 
 ---
 
-##  Imagens do Dashboard
+##  Screenshots do Dashboard
 
-![Visão Executiva](./imagens/dashprints/01_Analise_Geral.png)
-![Performance Comercial](./imagens/dashprints/02_Performance_Comercial.png)
-![Clientes](./imagens/dashprints/03_Clientes.png)
-![Eficiência e Rentabilidade](./imagens/dashprints/04_Eficiencia.png)
+### Visão Geral
+![Visão Geral](imagens/dashprints/01_Analise_Geral.png)
+
+### Performance Comercial
+![Performance Comercial](imagens/dashprints/02_Performance_Comercial.png)
+
+### Análise de Clientes
+![Clientes](imagens/dashprints/03_Clientes.png)
+
+### Eficiência e Rentabilidade
+![Eficiência](imagens/dashprints/04_Eficiencia.png)
+
+### Tooltip em Ação
+![Tooltip](imagens/dashprints/Tooltip.png)
+
+---
+ *Projeto desenvolvido por Rafaela como parte do portfólio de formação em Análise de Dados.*
