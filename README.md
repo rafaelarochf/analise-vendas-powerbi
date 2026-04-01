@@ -79,10 +79,11 @@ Análise de dispersão entre Preço Médio e Margem %.
 
 ##  Screenshots do Dashboard
 
-![Visão Geral](imagens/dashprints/01_Analise_Geral.png)
-![Performance Comercial](imagens/dashprints/02_Performance_Comercial.png)
-![Clientes](imagens/dashprints/03_Clientes.png)
-![Eficiência](imagens/dashprints/04_Eficiencia.png)
+![Visão Geral](imagens/dashprints/1_Analise_Geral.png)
+![Performance Comercial](imagens/dashprints/2_Performance_Comercial.png)
+![Clientes](imagens/dashprints/3_Clientes.png)
+![Eficiência](imagens/dashprints/4_Eficiencia.png)
+![Tooltip](imagens/dashprints/5_Tooltip.png)
 
 ---
 📌 *Projeto desenvolvido por **Rafaela Freitas** para portfólio de Análise de Dados.*
